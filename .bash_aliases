@@ -1,7 +1,7 @@
 alias www='cd /var/www/'
 
 alias pun='bin/phpunit -c backend/app'
-alias dbrel='pac doctrine:schema:drop --force && pac doctrine:schema:create && pac doctrine:fixtures:load'
+alias dbrel='sfdev doctrine:schema:drop --force && sfdev doctrine:schema:create && sfdev ha:doctrine:fixtures:load -n'
 
-alias sfdev="php backend/app/console --env=dev"
-alias sfprod="php backend/app/console --env=prod"
+alias sfdev="php backend/bin/console --env=dev"
+alias sfprod="php backend/bin/console --env=prod"
