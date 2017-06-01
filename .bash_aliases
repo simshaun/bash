@@ -13,6 +13,7 @@ alias php='php -dzend_extension=xdebug.so'
 
 # PHPUnit needs xdebug for coverage.
 alias phpunit='php $(which phpunit)'
+alias sfunit='backend/vendor/bin/simple-phpunit'
 
 #
 # Symfony (global)
