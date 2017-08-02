@@ -1,3 +1,16 @@
+#
+# Windows Subsystem for Linux shortcuts
+#
+
+function proj () {
+  cd /mnt/c/_projects
+  cd "$1"
+}
+
+#
+# cd Shortcuts
+#
+
 alias www='cd /var/www/'
 
 #
