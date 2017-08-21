@@ -45,7 +45,7 @@ alias pun='backend/vendor/bin/phpunit'
 
 function fastest () {
    find backend/src/*/Tests/ -name '*Test.php' | \
-   (read files; SYMFONY_DEPRECATIONS_HELPER="disabled" backend/vendor/bin/fastest "backend/vendor/bin/phpunit $files;")
+   (read files; SYMFONY_DEPRECATIONS_HELPER="disabled" backend/vendor/bin/fastest "backend/vendor/bin/phpunit $files;" $*)
  }
 
 export XDEBUG_CONFIG="idekey=PHPSTORM"
