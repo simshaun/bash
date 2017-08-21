@@ -42,6 +42,6 @@ alias sfunit='backend/vendor/bin/simple-phpunit'
 
 alias dbrel='sfdev doctrine:schema:drop --force && sfdev doctrine:schema:create && sfdev ha:doctrine:fixtures:load -n'
 alias pun='backend/vendor/bin/phpunit'
-alias fastest='find backend/src/*/Tests/ -name "*Test.php" | backend/vendor/bin/fastest "phpunit {};"'
+alias fastest='find backend/src/*/Tests/ -name "*Test.php" | backend/vendor/bin/fastest "backend/vendor/bin/phpunit {};"'
 
 export XDEBUG_CONFIG="idekey=PHPSTORM"
