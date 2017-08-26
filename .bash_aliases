@@ -40,7 +40,7 @@ alias sfunit='backend/vendor/bin/simple-phpunit'
 # Symfony (app-specific)
 #
 
-alias dbrel='sfdev doctrine:schema:drop --force && sfdev doctrine:schema:create && sfdev ha:doctrine:fixtures:load -n'
+alias dbrel='sfdev doctrine:schema:drop --force && sfdev doctrine:schema:create && sfdev ha:fixtures:load -n'
 alias pun='backend/vendor/bin/phpunit'
 
 function fastest () {
