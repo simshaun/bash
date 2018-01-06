@@ -18,7 +18,7 @@ alias www='cd /var/www/'
 #
 
 # Enable xdebug for CLI
-alias php='php -dzend_extension=xdebug.so'
+alias phpx='php -dzend_extension=xdebug.so'
 
 #
 # PHPUnit
