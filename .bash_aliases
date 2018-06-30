@@ -3,7 +3,7 @@
 #
 
 function proj () {
-  cd /mnt/e/_projects
+  cd /e/_projects
   cd "$1"
 }
 
