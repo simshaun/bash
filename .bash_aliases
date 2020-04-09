@@ -6,7 +6,9 @@ alias mv='mv -iv'
 alias grep='grep --color=auto -in'
 alias ..='cd ..'
 
+#
 # Shortcuts
+#
 
 function proj () {
   cd /e/_projects
@@ -17,6 +19,12 @@ function work () {
   cd /e/work
   cd "$1"
 }
+
+#
+# Docker
+#
+
+export DOCKER_HOST=tcp://localhost:2375
 
 #
 # Xdebug
