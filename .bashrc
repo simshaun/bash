@@ -116,8 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+#
 # Shaun's customizations:
+#
 
+# https://github.com/justjanne/powerline-go?WT.mc_id=-blog-scottha#installation
 GOPATH=$HOME/go
 function _update_ps1() {
     PS1="$($GOPATH/bin/powerline-go -error $?)"
