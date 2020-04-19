@@ -128,3 +128,7 @@ function _update_ps1() {
 if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+
+#
+# End of Shaun's customizations. Anything below this was auto-appended, (e.g. by nvm installer)
+#
