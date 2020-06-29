@@ -123,7 +123,7 @@ fi
 # https://github.com/justjanne/powerline-go?WT.mc_id=-blog-scottha#installation
 GOPATH=$HOME/go
 function _update_ps1() {
-    PS1="$($GOPATH/bin/powerline-go -newline -cwd-mode plain -error $?)"
+    PS1="$($GOPATH/bin/powerline-go -newline -cwd-mode plain -hostname-only-if-ssh -error $?)"
 }
 if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
