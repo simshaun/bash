@@ -21,6 +21,12 @@ function work () {
 }
 
 #
+# Docker
+#
+
+export DOCKER_HOST=tcp://localhost:2375
+
+#
 # Xdebug
 #
 
