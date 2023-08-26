@@ -27,11 +27,19 @@ function work () {
 export DOCKER_HOST=tcp://localhost:2375
 
 #
+# PHP
+#
+
+alias dep='php7.4 /usr/local/bin/dep'
+alias dep5='php7.4 /usr/local/bin/dep5'
+
+#
 # Xdebug
 #
 
 # Enable xdebug for CLI
 alias phpx='php -dzend_extension=xdebug.so'
+export XDEBUG_CONFIG="idekey=PHPSTORM"
 
 #
 # PHPUnit
@@ -60,5 +68,3 @@ function fastest () {
    find backend/src/*/Tests/ -name '*Test.php' | \
    (read files; SYMFONY_DEPRECATIONS_HELPER="disabled" backend/vendor/bin/fastest "backend/vendor/bin/phpunit $files;" $*)
  }
-
-export XDEBUG_CONFIG="idekey=PHPSTORM"
