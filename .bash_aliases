@@ -30,7 +30,6 @@ export DOCKER_HOST=tcp://localhost:2375
 # PHP
 #
 
-alias dep='php7.4 /usr/local/bin/dep'
 alias dep5='php7.4 /usr/local/bin/dep5'
 
 #
